@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* Header styles */
+header nav ul {
+display: flex;
+justify-content: flex-end;
+list-style: none;
+padding: 1rem 2rem;
+gap: 1.5rem;
+}
+header nav ul li a,
+header nav ul li button {
+color: #5f6368;
+text-decoration: none;
+background: none;
+border: none;
+cursor: pointer;
+font-size: 0.9rem;
+}
+header nav ul li button:hover,
+header nav ul li a:hover {
+text-decoration: underline;
+}
+
+/* Main section */
+main {
+flex: 5;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 10rem;
+margin-bottom: 10px;
+gap: 10px;
+}
+.logo {
+width: 272px;
+margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons button {
+background-color: #f8f9fa;
+border: 5px solid #f8f9fa;
+border-radius: 100px;
+padding: 10px 20px;
+font-size: 2rem;
+cursor: pointer;
+color: #3c4043;
+transition: box-shadow 0.2s ease;
+display: inline-block;
+gap: 20px;
+}
+.buttons button:hover {
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+border-color: #c6c6c6;
+}
+.buttons span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+input[type="search"] {
+    width: 600px;
+    height: 40px;
+    padding: 15px;
+    border: 1px solid#ddd;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.search-icon {
+    margin-right: 10px;
+    width: 16px;
+}
+
+/* Footer styles */
+footer {
+background-color: #f2f2f2;
+padding: 1rem 2rem;
+font-size: 0.8rem;
+color: #70757a;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+footer nav ul {
+list-style: none;
+display: flex;
+gap: 1rem;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+footer nav ul li a {
+color: #70757a;
+text-decoration: none;
+}
+footer nav ul li a:hover {
+text-decoration: underline;
+}
+
+
